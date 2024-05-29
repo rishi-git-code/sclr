@@ -1,8 +1,10 @@
 package com.sclr.lld.constructor;
 
-import java.awt.DisplayMode;
-
 public class House {
+	
+	static {
+		System.out.println("I'm static Block");
+	}
 
 	int noOfRoom;
 	String name;
@@ -10,6 +12,7 @@ public class House {
 	int sp;
 	String typeOfHouse;
 	int profit;
+	static String country;
 
 	// default constructor
 	public House() {

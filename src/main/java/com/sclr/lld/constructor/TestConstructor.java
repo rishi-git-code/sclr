@@ -7,7 +7,7 @@ public class TestConstructor {
 	}
 	public static void main(String[] args) {
 		
-		
+		/*
 		House.country = "INDIA";
 		House hs = new House();
 		System.out.println("I'm start of main method:");
@@ -38,6 +38,11 @@ public class TestConstructor {
 		System.out.println("Kshama Ka Country: "+kshama.country);
 		System.out.println("House Ka Country: "+House.country);
 		System.out.println("Mohit Ka Country: "+mohit.country);
+		*/
+		Floor f1 = new Floor("rishi",3000,5500);
+		
+		System.out.println(f1.getNumberOfRooms());
+		System.out.println(f1.getCountry());
 		
 	}
 

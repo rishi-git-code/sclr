@@ -1,18 +1,18 @@
 package com.sclr.lld.constructor;
 
 public class House {
-	
+
 	static {
-		System.out.println("I'm static Block");
+		System.out.println("I'm House static Block");
 	}
 
-	int noOfRoom;
+	int noOfRoom = 5;
 	String name;
 	int cp;
 	int sp;
 	String typeOfHouse;
 	int profit;
-	static String country;
+	static String country = "INDIA";
 
 	// default constructor
 	public House() {
@@ -21,13 +21,14 @@ public class House {
 
 	public House(String name) {
 		// this.name = name;
-		System.out.println("You are inside " + this.name + " House: " + name);
+		System.out.println("You are inside class House: " + name);
 	}
 
 	// Parameterized constructor
 	public House(String name, int cp, int sp) {
 		System.out.println("You are inside " + name + " House");
 		this.profit = sp - cp;
+		System.out.println("Profit: "+this.profit);
 	}
 
 	// copy constructor
@@ -39,6 +40,11 @@ public class House {
 		typeOfHouse = mohit.typeOfHouse;
 		profit = mohit.profit;
 
+	}
+
+	String getCountry() {
+		System.out.println("Country From House:");
+		return country;
 	}
 
 	public void Display(House obj) {

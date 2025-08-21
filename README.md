@@ -1,2 +1,2 @@
 # sclr
-practice Question
+DSA practice Question
